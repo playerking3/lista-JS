@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let matriz1 = [
+		  [4,8,3],
+		  [7,3,9],
+		  [15,43,5]
+		]
+
+		let matriz2 = [
+		  [6,7,3],
+		  [9,33,6],
+		  [23,7,4]
+		]
+
+		function multiply(m1,m2){
+			let produto = []
+			for (let i = 0; i < m1.length; i++){
+				let produtoLinha = []
+				for (let p = 0; p < m1[i].length; p++){
+					produtoLinha.push(m1[i][p] * m2[i][p])
+				}
+				produto.push(produtoLinha)
+			}
+			return produto
+		}
+
+		multiply(matriz1, matriz2)
+	</script>
+</body>
+</html>
