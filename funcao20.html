@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let matriz1 = [
+		  [4,8,3],
+		  [7,3,9],
+		  [15,43,5]
+		]
+
+		function menorMatriz(m){
+			menor = m[0][0]
+			for (var i = 0; i < m.length; i++) {
+				for (var j = 0; j < m[i].length; j++) {
+					if (menor > m[i][j]) {
+						menor = m[i][j]
+					}
+				}
+			}
+			return menor
+		}
+	</script>
+</body>
+</html>

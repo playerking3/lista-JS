@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let lista = ["pena", "carro", "barco", "salada", "branco", "pobre", "proparoxitona", "um"]
+
+		function menorComprimento(l) {
+			let menor = l[0]
+			for (var i = 1; i < l.length; i++) {
+				if (menor.length > l[i].length){
+					menor = l[i]
+				} 
+			}
+			return menor
+		}
+	</script>
+</body>
+</html>

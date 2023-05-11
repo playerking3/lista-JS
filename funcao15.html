@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let lista = [2,2,2,3,3,3,3,3,3,3,6,6,12]
+
+		function moda(l){
+			let maior = 0
+			let elemento = 0
+			for (let i = 0; i < l.length; i++){
+				let iguais = l.filter(function(elemento){
+					return elemento === l[i]
+				})
+				if (iguais.length > maior){
+					maior = iguais.length
+					elemento = l[i]
+				}
+			}
+			return elemento
+		}
+	</script>
+</body>
+</html>
