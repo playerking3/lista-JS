@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let matriz1 = [
+		  [4,8,3],
+		  [7,3,9],
+		  [15,43,5]
+		]
+
+		function potencia(m){
+			let m2 = []
+			for (let linha = 0; linha < m.length; linha++){
+				let novaLinha = []
+				for (let coluna = 0;coluna < m[linha].length; coluna++){
+					let aoQuadrado = m[linha][coluna] * m[linha][coluna]
+					novaLinha.push(aoQuadrado)
+				}
+				m2.push(novaLinha)
+			}
+			return m2
+		}
+	</script>
+</body>
+</html>
